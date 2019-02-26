@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽首頁"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s：%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s - %2$s：%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"關閉"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"開啟"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"搜尋…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string>
+    <string name="cancel">取消</string>
+    <string name="menu_scan">搜索</string>
+    <string name="menu_stop">停止</string>
+    <string name="ok">确定</string>
+    <string name="rtk_cancel">取消</string>
+    <string name="rtk_message_exit_app">确认退出应用?</string>
+    <string name="rtk_ok">确定</string>
+    <string name="rtk_text_help">帮助</string>
+    <string name="rtk_text_version">版本</string>
+    <string name="rtk_title_about">关于</string>
+    <string name="rtk_title_device_info">设备信息</string>
+    <string name="rtk_title_help">帮助</string>
+    <string name="rtksdk_action_cancel">取消</string>
+    <string name="rtksdk_action_scan">搜素</string>
+    <string name="rtksdk_button_checkupdate">检查更新</string>
+    <string name="rtksdk_copyright">
+       版权所有 ©2018 Realtek Semiconductor Corp.\n保留所有权利.
+    </string>
+    <string name="rtksdk_permission_cancel">残忍拒绝</string>
+    <string name="rtksdk_permission_denied">权限 Denied: %1$s</string>
+    <string name="rtksdk_permission_ok">立刻开启</string>
+    <string name="rtksdk_scanner_empty">无设备</string>
+    <string name="rtksdk_scanner_subtitle_available_devices">可用设备</string>
+    <string name="rtksdk_scanner_subtitle_bonded_devices">已绑定设备</string>
+    <string name="rtksdk_title_scanner">搜索</string>
+    <string name="rtksdk_title_select_file">选择文件</string>
+    <string name="rtksdk_toast_bt_enable">开呀开启!</string>
+    <string name="rtksdk_toast_bt_not_enable">蓝牙关闭!</string>
+    <string msgid="146198913615257606" name="search_menu_title">"搜尋"</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="zxing_app_name">條碼掃描器</string>
+    <string name="zxing_button_ok">確定</string>
+    <string name="zxing_msg_camera_framework_bug">很抱歉，Android 相機出現問題，您可能需要重新啟動您的裝置。</string>
+    <string name="zxing_msg_default_status">將條碼置於鏡頭範圍內以進行掃描。</string>
+</resources>

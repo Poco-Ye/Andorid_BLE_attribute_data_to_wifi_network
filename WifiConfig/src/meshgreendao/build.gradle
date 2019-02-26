@@ -1,0 +1,10 @@
+apply plugin: 'application'
+mainClassName = "com.realsil.WifiConfigGreendao.WifiConfigGen"
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/freemarker-2.3.23.jar')
+    implementation files('libs/greendao-generator-2.1.0.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

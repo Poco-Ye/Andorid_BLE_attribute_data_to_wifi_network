@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="Settings">
+
+
+    <PreferenceCategory android:title="@string/pref_title_sys_settings">
+
+        <!-- Bluetooth Settings -->
+        <Preference
+            android:key="bluetooth_settings"
+            android:title="@string/pref_title_sys_settings_bluetooth">
+            <intent android:action="android.settings.BLUETOOTH_SETTINGS"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_dfu">
+        <com.realsil.sdk.support.view.RtkListPreference
+            android:entries="@array/dfu_work_mode_entries"
+            android:entryValues="@array/dfu_work_mode_values"
+            android:key="dfu_work_mode_mechanism"
+            android:summary="{v}"
+            android:title="@string/pref_title_dfu_work_mode"/>
+
+        <com.realsil.sdk.support.view.RtkListPreference
+            android:entries="@array/dfu_file_content_entries"
+            android:entryValues="@array/dfu_file_content_values"
+            android:key="dfu_file_content_mechanism"
+            android:summary="{v}"
+            android:title="@string/pref_title_dfu_file_content"/>
+
+        <com.realsil.sdk.support.view.RtkListPreference
+            android:entries="@array/dfu_version_check_mechanism_entries"
+            android:entryValues="@array/dfu_speed_control_level_values"
+            android:key="dfu_version_check_mechanism"
+            android:summary="{v}"
+            android:title="@string/pref_title_dfu_version_check"/>
+
+        <com.realsil.sdk.support.view.RtkListPreference
+            android:entries="@array/dfu_battery_check_mechanism_entries"
+            android:entryValues="@array/dfu_speed_control_level_values"
+            android:key="dfu_battery_check_mechanism"
+            android:summary="{v}"
+            android:title="@string/pref_title_dfu_battery_check"/>
+
+
+        <!--<ListPreference-->
+            <!--android:entries="@array/dfu_speed_control_level_entries"-->
+            <!--android:entryValues="@array/dfu_speed_control_level_values"-->
+            <!--android:key="dfu_speed_control_level"-->
+            <!--android:summary="{v}"-->
+            <!--android:title="@string/pref_title_dfu_speed_control_level"/>-->
+
+        <SwitchPreference
+            android:key="switch_dfu_backlink"
+            android:summary="是否打开我呢？"
+            android:summaryOff="@string/rtk_summaryOff"
+            android:summaryOn="@string/rtk_summaryOn"
+            android:switchTextOff="@string/rtk_switchTextOff"
+            android:switchTextOn="@string/rtk_switchTextOn"
+            android:title="@string/pref_title_dfu_bank_link"/>
+
+        <SwitchPreference
+            android:key="switch_dfu_automatic_active"
+            android:summary="是否打开我呢？"
+            android:summaryOff="@string/rtk_summaryOff"
+            android:summaryOn="@string/rtk_summaryOn"
+            android:switchTextOff="@string/rtk_switchTextOff"
+            android:switchTextOn="@string/rtk_switchTextOn"
+            android:title="@string/pref_title_dfu_automatic_active"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/rtk_pref_title_developer_optoins">
+
+        <SwitchPreference
+            android:key="switch_hid_auto_pair"
+            android:summary="是否打开我呢？"
+            android:summaryOff="@string/rtk_summaryOff"
+            android:summaryOn="@string/rtk_summaryOn"
+            android:switchTextOff="@string/rtk_switchTextOff"
+            android:switchTextOn="@string/rtk_switchTextOn"
+            android:title="@string/pref_title_hid_auto_pair"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

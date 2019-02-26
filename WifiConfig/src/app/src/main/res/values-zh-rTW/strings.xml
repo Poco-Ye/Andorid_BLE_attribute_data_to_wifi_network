@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WifiConfig</string>
+
+    <string name="sync_data_success">同步數據成功!</string>
+
+    <string name="sure">確定</string>
+    <string name="cancel">取消</string>
+
+    <!-- setting -->
+    <string name="settings_bracelet">我的設備</string>
+    <string name="settings_remove_bond">解除綁定</string>
+    <string name="settings_remove_bond_sync_end_tip">確定要断开连接？</string>
+    <string name="syncing_data">同步曆史數據...</string>
+    <string name="syncing_data_fail">同步數據失敗，請再試壹次</string>
+
+    <string name="progress_bar_timeout">等待操作超時，可能出現問題，斷開當前連接！</string>
+
+    <!-- connect -->
+    <string name="connect_disconnect">已斷開連接</string>
+
+    <string name="remove_bond">断开</string>
+
+    <string name="bond_success">配對成功</string>
+    <string name="bond_failure">配對失敗</string>
+
+    <string name="connect_band">正在登錄手環, 請稍等...</string>
+
+    <string name="something_error">出現異常</string>
+    <string name="connect_band_already_bond">已和其他設備綁定，請先與前壹個設備解除綁定</string>
+
+
+    <!-- pull scan -->
+    <string name="pull_to_scan">下拉掃描設備</string>
+    <string name="bonded_unpair_first">已配對壹個手環，如果需要配對其他手環，請先解除當前配對！</string>
+    <string name="release_to_scan">松開掃描</string>
+    <string name="scanning">掃描中</string>
+    <string name="connected_with_toast">已連接，可以正常使用！</string>
+    <string name="connected_with_toast_local">已連接，可以正常使用！</string>
+    <string name="disconnect_reconnect_it_with_toast">已斷開連接，正在嘗試重連...</string>
+
+
+    <!-- pull refresh -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">釋放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暫未更新過</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">剛剛更新</string>
+    <string name="time_error">時間有問題</string>
+    <string name="pull_minutes">分鍾</string>
+    <string name="pull_hour">小時</string>
+    <string name="pull_day">天</string>
+    <string name="pull_month">個月</string>
+    <string name="pull_year">年</string>
+
+    <string name="scanner_subtitle_bonded">网络设备:</string>
+    <string name="scanner_subtitle_not_bonded">可用設備:</string>
+    <string name="unknown_device">未知設備</string>
+
+    <string name="bluetooth_not_support_ble">該設備不支持BLE。</string>
+    <string name="bluetooth_enabled">藍牙已啓動！</string>
+    <string name="bluetooth_not_enabled">藍牙未啓動！</string>
+
+    <!-- Device Info -->
+
+    <!-- OTA -->
+
+    <!-- About -->
+
+    <!-- Login -->
+
+    <!-- Find Password -->
+
+    <!--第三方登录开始-->
+    <!--第三方登录结束-->
+
+    <!--分享开始-->
+    <!--分享结束-->
+
+    <!--调试设置开始-->
+    <!--调试设置结束-->
+
+    <!--调试raw data设置开始-->
+    <!--调试raw data结束-->
+
+    <!--心率开始-->
+    <!--心率结束-->
+
+    <string name="setting_scan_device_only_bond_one_device_toast">只能綁定壹個設備，請解綁當前設備再連接其他設備</string>
+
+    <!--FTP开始-->
+    <!--FTP结束-->
+
+    <!--网络管理开始-->
+    <!--网络管理结束-->
+
+    <string name="permission_disallowed">權限不允許</string>
+
+    <string name="permission_failure_title">權限獲取失敗</string>
+    <string name="permission_failure_text">軟件需要獲取必要的權限以保證正常使用</string>
+    <string name="permission_failure_sure">設置權限</string>
+    <string name="permission_failure_cancel">取消</string>
+
+    <string name="connecting_to_device_tip">正在連接設備</string>
+    <string name="about_title">关于</string>
+    <string name="sure_to_exit">您确定退出吗？</string>
+    <string name="toast_message">对话框</string>
+    <string name="new_group">新组</string>
+    <string name="please_connect_device_first">请首先连接设备</string>
+    <string name="not_null">不能为空</string>
+    <string name="mofify_device_name">修改设备名称</string>
+    <string name="successfully_deleted">删除成功,请手动重置设备</string>
+    <string name="rename">重命名</string>
+    <string name="remove">移除</string>
+    <string name="not_support_bluetooth">该设备不支持蓝牙</string>
+    <string name="disconnect_to_device">与设备断开连接</string>
+    <string name="connect_to_device">与设备建立连接</string>
+    <string name="more_than_the">超过分享个数限制</string>
+    <string name="shared_device">分享过的不能再分享给别人</string>
+    <string name="no_data">无数据</string>
+    <string name="not_device_share">非设备分享二维码</string>
+    <string name="modify_homework_name">修改家庭网络名称</string>
+    <string name="home_network_name">家庭网络名称</string>
+    <string name="local_network_error">本地网络异常:</string>
+    <string name="aliyun_error">阿里云异常:</string>
+    <string name="share_error">该二维码已失效，请重新生成二维码</string>
+    <string name="control_all_devices">控制所有设备</string>
+    <string name="control_group">控制组</string>
+    <string name="add_group">添加组</string>
+    <string name="control_single_device">控制单个设备</string>
+    <string name="modify_group_name">修改组名称</string>
+    <string name="delete_group_success">删除组成功</string>
+    <string name="delete_device_from_group">删除组设备成功</string>
+    <string name="add_device_to_group">添加设备到组成功</string>
+    <string name="config">配置</string>
+    <string name="home_network">家庭网络</string>
+    <string name="proxy_switch">代理切换</string>
+    <string name="qr_scan">扫一扫</string>
+    <string name="share">分享</string>
+    <string name="ota_update">OTA升级</string>
+    <string name="help">帮助</string>
+    <string name="about">关于</string>
+    <string name="delete_this_group">删除本组</string>
+    <string name="select_device_to_add">选择设备添加到本组中</string>
+    <string name="search_home_device">搜索家庭网络中的设备</string>
+    <string name="reconnecting">正在连接中，请勿重复点击</string>
+</resources>

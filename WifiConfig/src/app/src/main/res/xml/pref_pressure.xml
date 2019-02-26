@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="Settings">
+
+
+    <PreferenceCategory android:title="@string/pref_title_sys_settings">
+
+    <!-- Bluetooth Settings -->
+    <Preference
+        android:key="bluetooth_settings"
+        android:title="@string/pref_title_sys_settings_bluetooth">
+        <intent android:action="android.settings.BLUETOOTH_SETTINGS"/>
+    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/text_pressure_test">
+        <!--<ListPreference-->
+        <!--android:dialogTitle="数据源"-->
+        <!--android:entries="@array/tx_data_source"-->
+        <!--android:entryValues="@array/tx_data_source_values"-->
+        <!--android:key="single_list_tx_datasource"-->
+        <!--android:summary="{v}"-->
+        <!--android:title="数据源"/>-->
+
+        <SwitchPreference
+            android:key="switch_ota_auto_test_stop_with_error"
+            android:summary="是否打开我呢？"
+            android:summaryOff="@string/rtk_summaryOff"
+            android:summaryOn="@string/rtk_summaryOn"
+            android:switchTextOff="@string/rtk_switchTextOff"
+            android:switchTextOn="@string/rtk_switchTextOn"
+            android:title="@string/pref_title_auto_test_stop_with_error"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="connection_error_code_0">
+        <item>"0"</item>
+        <item>建立GATT连接失败</item>
+        <item>1. 建立GATT连接失败</item>
+    </array>
+    <array name="connection_error_code_1">
+        <item>"1"</item>
+        <item>搜索GATT服务失败</item>
+        <item>1. 搜索GATT服务失败</item>
+    </array>
+    <array name="connection_error_code_2">
+        <item>"2"</item>
+        <item>获取GATT服务失败</item>
+        <item>1. 服务不支持</item>
+    </array>
+    <array name="connection_error_code_3">
+        <item>"3"</item>
+        <item>获取GATT服务失败</item>
+        <item>1. OTA 服务不支持</item>
+    </array>
+    <array name="connection_error_code_4">
+        <item>"4"</item>
+        <item>获取GATT Characteristic失败</item>
+        <item>1. 获取GATT Characteristic失败</item>
+    </array>
+    <array name="connection_error_code_5">
+        <item>"5"</item>
+        <item>读取GATT Characteristic失败</item>
+        <item>1. 读取GATT Characteristic失败</item>
+    </array>
+    <string-array name="dfu_battery_check_mechanism_entries">
+        <item>不检查</item>
+        <item>低电量提示</item>
+    </string-array>
+    <string-array name="dfu_file_content_entries">
+        <item>提示</item>
+        <item>全部</item>
+    </string-array>
+    <string-array name="dfu_speed_control_level_entries">
+        <item>自动</item>
+        <item>很慢</item>
+        <item>慢</item>
+        <item>中等</item>
+        <item>快</item>
+        <item>很快</item>
+    </string-array>
+    <string-array name="dfu_version_check_mechanism_entries">
+        <item>不检查</item>
+        <item>低版本提示</item>
+    </string-array>
+    <string-array name="dfu_work_mode_entries">
+        <item>提示</item>
+        <item>静默优先</item>
+        <item>普通优先</item>
+    </string-array>
+    <array name="error_code_1028">
+        <item>"1028"</item>
+        <item>GATT_INVALID_PDU</item>
+        <item>write command failed</item>
+    </array>
+    <array name="error_code_1157">
+        <item>"1157"</item>
+        <item>GATT_ERROR</item>
+        <item>发送命令失败</item>
+    </array>
+    <array name="error_code_2048">
+        <item>"2048"</item>
+        <item>Gatt 连接断开</item>
+        <item>1. 由于底层Link 异常断开导致Gatt 连接断开</item>
+    </array>
+    <array name="error_code_2056">
+        <item>"2056"</item>
+        <item>Gatt 连接超时</item>
+        <item>1. 由于底层Link 异常断开导致Gatt 连接超时</item>
+    </array>
+    <array name="error_code_2067">
+        <item>"2067"</item>
+        <item>0x13-GATT_CONN_TERMINATE_PEER_USER</item>
+        <item>1. 0x13-GATT_CONN_TERMINATE_PEER_USER</item>
+    </array>
+    <array name="error_code_2181">
+        <item>"2181"</item>
+        <item>GATT_ERROR</item>
+        <item>连接GATT失败</item>
+    </array>
+    <array name="error_code_2305">
+        <item>"2305"</item>
+        <item>无法注册Client_if</item>
+        <item>1. Client if被注册完了</item>
+    </array>
+    <array name="error_code_256">
+        <item>"256"</item>
+        <item>无法连接进入OTA模式的设备</item>
+        <item>1. 广播环境极其差
+            \n2. Android设备与Ble设备连接走了BR/EDR通道
+            \n3. Android设备Bluedroid异常
+        </item>
+    </array>
+    <array name="error_code_257">
+        <item>"257"</item>
+        <item>文件读取IO错误</item>
+        <item>1. I/O问题，概率极低</item>
+    </array>
+    <array name="error_code_258">
+        <item>"258"</item>
+        <item>启动搜索服务失败</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_259">
+        <item>"259"</item>
+        <item>调用Java同步锁异常</item>
+        <item>1. Java问题，概率极低</item>
+    </array>
+    <array name="error_code_260">
+        <item>"260"</item>
+        <item>连接无回调</item>
+        <item>1. 可能其他应用在对同一设备做连接动作
+            \n2. Bluedroid异常，概率极低
+        </item>
+    </array>
+    <array name="error_code_261">
+        <item>"261"</item>
+        <item>发送command无回调</item>
+        <item>1. 发送command过程中断线
+            \n2. 如果是Android4.4系统，升级到一半中出现该错误，有可能是底下gki get
+            buffer出异常了，请对方使用patch版本在9377以上的版本（该版本添加了更新连接参数的功能）或者使用Android5.0以上版本的手机。
+        </item>
+    </array>
+    <array name="error_code_262">
+        <item>"262"</item>
+        <item>服务不匹配</item>
+        <item>1. 连到了异常设备，概率极低</item>
+    </array>
+    <array name="error_code_263">
+        <item>"263"</item>
+        <item>特性不匹配</item>
+        <item>1. 连到了异常设备，概率极低</item>
+    </array>
+    <array name="error_code_264">
+        <item>"264"</item>
+        <item>GATT对象为空</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_265">
+        <item>"265"</item>
+        <item>无法scan到设备</item>
+        <item>1. 广播环境极其差
+            \n2. 发送了让对端进入OTA模式的命令后，没扫描到对端设备，可能的原因是对端设备并未进入OTA模式
+        </item>
+    </array>
+    <array name="error_code_266">
+        <item>"266"</item>
+        <item>无法使能notification</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_267">
+        <item>"267"</item>
+        <item>写特性失败</item>
+        <item>1. 发送write request对端返回response error</item>
+    </array>
+    <array name="error_code_268">
+        <item>"268"</item>
+        <item>重发次数达上限</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_269">
+        <item>"269"</item>
+        <item>对端电池电量低</item>
+        <item>1. 对端电量小于30%
+            \n2. 对端电量大于110且小于140（For 华为）
+        </item>
+    </array>
+    <array name="error_code_270">
+        <item>"270"</item>
+        <item>读取bank区信息失败</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_271">
+        <item>"271"</item>
+        <item>读取App信息失败</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_272">
+        <item>"272"</item>
+        <item>读取Patch信息失败</item>
+        <item>1. Bluedroid异常，概率极低</item>
+    </array>
+    <array name="error_code_273">
+        <item>"273"</item>
+        <item>读取image版本信息失败</item>
+        <item>1. 读取image版本信息失败</item>
+    </array>
+    <array name="error_code_274">
+        <item>"274"</item>
+        <item>用户不激活文件更新</item>
+        <item>1. 在静默升级中用户不激活更新触发</item>
+    </array>
+    <array name="error_code_275">
+        <item>"275"</item>
+        <item>Buffer校验重传次数达到最大值</item>
+        <item>1. 出现大量的517错误</item>
+    </array>
+    <array name="error_code_276">
+        <item>"276"</item>
+        <item>交换MTU失败</item>
+        <item>1. 交换MTU失败</item>
+    </array>
+    <array name="error_code_277">
+        <item>"277"</item>
+        <item>读取设备MAC地址失败</item>
+        <item>1. 读取设备MAC地址失败</item>
+    </array>
+    <array name="error_code_278">
+        <item>"278"</item>
+        <item>版本检查失败</item>
+        <item>1. 固件 app 版本太低
+            \n2. 固件 patch 版本太低
+            \n3. 固件 patch extension 版本太低</item>
+    </array>
+    <array name="error_code_4097">
+        <item>"4097"</item>
+        <item>加载镜像文件失败</item>
+        <item>1. 加载镜像文件失败</item>
+    </array>
+    <array name="error_code_4098">
+        <item>"4098"</item>
+        <item>镜像文件路径无效</item>
+        <item>1. 镜像文件路径无效</item>
+    </array>
+    <array name="error_code_4099">
+        <item>"4099"</item>
+        <item>镜像文件后缀无效</item>
+        <item>1. 镜像文件后缀无效</item>
+    </array>
+    <array name="error_code_4100">
+        <item>"4100"</item>
+        <item>镜像文件不存在</item>
+        <item>1.镜像文件不存在</item>
+    </array>
+    <array name="error_code_4101">
+        <item>"4101"</item>
+        <item>打包文件格式不对</item>
+        <item>1. ota version = 1 时，只支持打包文件</item>
+    </array>
+    <array name="error_code_4102">
+        <item>"4102"</item>
+        <item>镜像文件和芯片不匹配</item>
+        <item>1. 镜像文件和芯片不匹配</item>
+    </array>
+    <array name="error_code_4112">
+        <item>"4112"</item>
+        <item>设备地址无效</item>
+        <item>1. 设备地址无效</item>
+    </array>
+    <array name="error_code_4113">
+        <item>"4113"</item>
+        <item>密钥无效</item>
+        <item>1. 密钥无效</item>
+    </array>
+    <array name="error_code_4114">
+        <item>"4114"</item>
+        <item>配置无效</item>
+        <item>1. 配置无效</item>
+    </array>
+    <array name="error_code_4128">
+        <item>"4128"</item>
+        <item>升级中断</item>
+        <item>1. 升级中断</item>
+    </array>
+    <array name="error_code_517">
+        <item>"517"</item>
+        <item>CRC 校验失败</item>
+        <item>1. CRC 校验失败
+            \n2. 更新连接参数失败
+        </item>
+    </array>
+    <array name="error_code_520">
+        <item>"520"</item>
+        <item>Flash erase error</item>
+        <item>1. Flash erase error
+        </item>
+    </array>
+    <array name="error_code_766">
+        <item>"766"</item>
+        <item>指令不支持</item>
+        <item>1. 指令不支持
+        </item>
+    </array>
+    <array name="error_code_767">
+        <item>"767"</item>
+        <item>未收到对端notification</item>
+        <item>1. 秘钥不匹配
+            \n2. 可能是对端设备Config内存分配有问题
+        </item>
+    </array>
+    <string-array name="rtk_app_file_browser">
+        <item>ES 文件浏览器</item>
+        <item>文件浏览器</item>
+        <item>RE 文件浏览器</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="rtk_app_file_browser_action">
+        <item>market://details?id=com.estrongs.android.pop</item>
+        <item>market://details?id=com.rhmsoft.fm</item>
+        <item>market://details?id=com.speedsoftware.rootexplorer</item>
+        <item>market://search?q=file manager</item>
+    </string-array>
+    <dimen name="rtkbt_ota_dfu_feature_title_long_margin">-186dp</dimen>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s：%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s - %2$s：%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"转到上一层级"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多选项"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"选择应用"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"关闭"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"开启"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"搜索…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查询"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜索查询"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查询"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
+    <string name="about">关于</string>
+    <string name="about_title">关于</string>
+    <string name="add_device_to_group">添加设备到组成功</string>
+    <string name="add_group">添加组</string>
+    <string name="aliyun_error">阿里云异常:</string>
+    <string name="app_name">WifiConfig</string>
+    <string name="bluetooth_enabled">蓝牙已启动！</string>
+    <string name="bluetooth_not_enabled">蓝牙未启动！</string>
+    <string name="bluetooth_not_support_ble">该设备不支持BLE。</string>
+    <string name="bluetooth_not_supported">设备不支持蓝牙</string>
+    <string name="bond_failure">配对失败</string>
+    <string name="bond_success">配对成功</string>
+    <string name="bonded_unpair_first">已配对，如果需要配对其他设备，请先解除当前配对！</string>
+    <string name="button_export_report">导出测试报告</string>
+    <string name="button_stop">停止</string>
+    <string name="cancel">取消</string>
+    <string name="config">配置</string>
+    <string name="connect_band">正在登录手环, 请稍等...</string>
+    <string name="connect_band_already_bond">已和其他设备绑定，请先与前一个设备解除绑定</string>
+    <string name="connect_disconnect">已断开连接</string>
+    <string name="connect_to_device">与设备建立连接</string>
+    <string name="connected_with_toast">已连接，可以正常使用！</string>
+    <string name="connected_with_toast_local">已连接，可以正常使用！</string>
+    <string name="connecting_to_device_tip">正在连接设备</string>
+    <string name="control_all_devices">控制所有设备</string>
+    <string name="control_group">控制组</string>
+    <string name="control_single_device">控制单个设备</string>
+    <string name="delete_device_from_group">删除组设备成功</string>
+    <string name="delete_group_success">删除组成功</string>
+    <string name="delete_this_group">删除本组</string>
+    <string name="disconnect_reconnect_it_with_toast">已断开连接，正在尝试重连...</string>
+    <string name="disconnect_to_device">与设备断开连接</string>
+    <string name="help">帮助</string>
+    <string name="home_network">家庭网络</string>
+    <string name="home_network_name">家庭网络名称</string>
+    <string name="local_network_error">本地网络异常:</string>
+    <string name="menu_scan">搜索</string>
+    <string name="menu_stop">停止</string>
+    <string name="message_export_test_report_peocessing">正在导出测试报告</string>
+    <string name="modify_group_name">修改组名称</string>
+    <string name="modify_homework_name">修改家庭网络名称</string>
+    <string name="mofify_device_name">修改设备名称</string>
+    <string name="more_than_the">超过分享个数限制</string>
+    <string name="new_group">新组</string>
+    <string name="no_data">无数据</string>
+    <string name="not_device_share">非设备分享二维码</string>
+    <string name="not_null">不能为空</string>
+    <string name="not_support_bluetooth">该设备不支持蓝牙</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="ok">确定</string>
+    <string name="ota_update">OTA升级</string>
+    <string name="permission_disallowed">权限不允许</string>
+    <string name="permission_failure_cancel">取消</string>
+    <string name="permission_failure_sure">设置权限</string>
+    <string name="permission_failure_text">软件需要获取必要的权限以保证正常使用</string>
+    <string name="permission_failure_title">权限获取失败</string>
+    <string name="please_connect_device_first">请首先连接设备</string>
+    <string name="pref_title_auto_test">自动化测试</string>
+    <string name="pref_title_auto_test_stop_with_error">错误自动停止</string>
+    <string name="pref_title_dfu">固件升级</string>
+    <string name="pref_title_dfu_automatic_active">自动激活固件</string>
+    <string name="pref_title_dfu_bank_link">回连</string>
+    <string name="pref_title_dfu_battery_check">电量检查</string>
+    <string name="pref_title_dfu_bond">配对</string>
+    <string name="pref_title_dfu_file_content">文件内容</string>
+    <string name="pref_title_dfu_speed_control_level">限速</string>
+    <string name="pref_title_dfu_version_check">版本检查</string>
+    <string name="pref_title_dfu_work_mode">升级模式</string>
+    <string name="pref_title_general">通用</string>
+    <string name="pref_title_hid_auto_pair">HID 自动配对</string>
+    <string name="pref_title_sys_settings">系统设置</string>
+    <string name="pref_title_sys_settings_bluetooth">蓝牙</string>
+    <string name="progress_bar_timeout">等待操作超时，可能出现问题，断开当前连接！</string>
+    <string name="proxy_switch">代理切换</string>
+    <string name="pull_day">天</string>
+    <string name="pull_hour">小时</string>
+    <string name="pull_minutes">分钟</string>
+    <string name="pull_month">个月</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="pull_to_scan">下拉扫描设备</string>
+    <string name="pull_year">年</string>
+    <string name="qr_scan">扫一扫</string>
+    <string name="reconnecting">正在连接中，请勿重复点击</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="release_to_scan">松开扫描</string>
+    <string name="remove">移除</string>
+    <string name="remove_bond">断开</string>
+    <string name="rename">重命名</string>
+    <string name="rtk_alert_no_download_view_find_please_download_one">下载应用未找到，请自行下载一个文件浏览器</string>
+    <string name="rtk_alert_no_filebrowser_message">未找到文件浏览器，请自行下载一个文件浏览器</string>
+    <string name="rtk_alert_no_filebrowser_title">未找到文件浏览器</string>
+    <string name="rtk_cancel">取消</string>
+    <string name="rtk_dfu_detail_file_info_sub_file_size">大小：</string>
+    <string name="rtk_dfu_detail_file_info_sub_file_type">类型：</string>
+    <string name="rtk_dfu_detail_file_info_sub_file_version">版本：</string>
+    <string name="rtk_dfu_fc_pack_duplicate_bank">选择文件的bank和当前设备bank区相同</string>
+    <string name="rtk_dfu_fc_pack_loss">没有找到可升级的文件</string>
+    <string name="rtk_dfu_fc_pack_loss_app_image">打包文件没有 App Image</string>
+    <string name="rtk_dfu_fc_pack_loss_empty">打包文件不能为空</string>
+    <string name="rtk_dfu_fc_pack_loss_ota_header">打包文件没有 OTA Header</string>
+    <string name="rtk_dfu_fc_pack_loss_rom_patch">打包文件没有 Rom Patch</string>
+    <string name="rtk_dfu_fc_pack_nt">不支持打包文件</string>
+    <string name="rtk_dfu_fc_pack_nt_bank_switch">选择的文件不支持bank切换</string>
+    <string name="rtk_dfu_fc_pack_nt_ota_header">不支持含有 OTA Header 的打包文件</string>
+    <string name="rtk_dfu_fc_single_nt">选择的文件不是打包文件</string>
+    <string name="rtk_dfu_fc_undefined">未定义</string>
+    <string name="rtk_dfu_file_content_type_full">全部</string>
+    <string name="rtk_dfu_file_size">%d 字节</string>
+    <string name="rtk_dfu_file_status_no_file">文件未加载</string>
+    <string name="rtk_dfu_file_status_ok">OK</string>
+    <string name="rtk_dfu_file_type_merge_app">Merge App</string>
+    <string name="rtk_dfu_file_type_merge_config_file">Merge Config file</string>
+    <string name="rtk_dfu_file_type_merge_external_flash_image">Merge External Flash image</string>
+    <string name="rtk_dfu_file_type_merge_patch">Merge Patch</string>
+    <string name="rtk_dfu_file_type_merge_patch_extension">Merge Patch Extension</string>
+    <string name="rtk_dfu_file_type_merge_user_data">Merge User data</string>
+    <string name="rtk_dfu_file_type_pack">压缩包</string>
+    <string name="rtk_dfu_file_type_single">单文件</string>
+    <string name="rtk_dfu_file_type_unknown">未知</string>
+    <string name="rtk_dfu_file_version_text_detail">文件详情</string>
+    <string name="rtk_dfu_pressure_exception_count">异常:%1$2d\n(%2$.2f%%)</string>
+    <string name="rtk_dfu_pressure_fail_count">失败:%1$2d\n(%2$.2f%%)</string>
+    <string name="rtk_dfu_pressure_success_count">成功:%1$2d\n(%2$.2f%%)</string>
+    <string name="rtk_dfu_pressure_total_count">总计:%1$2d</string>
+    <string name="rtk_dfu_scanner_action_cancel">取消</string>
+    <string name="rtk_dfu_scanner_action_scan">搜索</string>
+    <string name="rtk_dfu_scanner_empty">未搜索到设备</string>
+    <string name="rtk_dfu_scanner_subtitle_bonded">已配对设备：</string>
+    <string name="rtk_dfu_scanner_subtitle_not_bonded">可用设备：</string>
+    <string name="rtk_dfu_scanner_title">选择一个你想要升级的设备：</string>
+    <string name="rtk_dfu_select_workmodetitle">选择升级模式</string>
+    <string name="rtk_dfu_state_connect_ota_remote">连接设备…</string>
+    <string name="rtk_dfu_state_find_ota_remote">搜索设备…</string>
+    <string name="rtk_dfu_state_image_active_success">固件激活成功</string>
+    <string name="rtk_dfu_state_initialize">初始化 …</string>
+    <string name="rtk_dfu_state_known">未知</string>
+    <string name="rtk_dfu_state_origin">准备升级</string>
+    <string name="rtk_dfu_state_ota_send_file">正在发送文件 %1$d/%2$d …</string>
+    <string name="rtk_dfu_state_pending_active_image">等待激活固件 …</string>
+    <string name="rtk_dfu_state_prepare_dfu_processing">准备升级环境 …</string>
+    <string name="rtk_dfu_state_remote_enter_ota">进入升级模式…</string>
+    <string name="rtk_dfu_state_start">启动中 …</string>
+    <string name="rtk_dfu_state_start_active_image">固件激活中 …</string>
+    <string name="rtk_dfu_state_start_ota_processing">正在升级…</string>
+    <string name="rtk_dfu_state_upgrade_success">升级成功</string>
+    <string name="rtk_dfu_text_battery_level">电量</string>
+    <string name="rtk_dfu_text_collapse">收起</string>
+    <string name="rtk_dfu_text_file_ic_type">芯片</string>
+    <string name="rtk_dfu_text_file_image_size">Image 大小</string>
+    <string name="rtk_dfu_text_file_image_version">Image 版本</string>
+    <string name="rtk_dfu_text_file_name">文件名称</string>
+    <string name="rtk_dfu_text_file_path">文件路径</string>
+    <string name="rtk_dfu_text_file_status">状态</string>
+    <string name="rtk_dfu_text_file_type">文件类型</string>
+    <string name="rtk_dfu_text_file_upload_content">升级内容</string>
+    <string name="rtk_dfu_text_pressure_fail">升级失败</string>
+    <string name="rtk_dfu_text_pressure_start">开始升级</string>
+    <string name="rtk_dfu_text_pressure_status">\n%1$2d > %2$s</string>
+    <string name="rtk_dfu_text_pressure_success">升级成功</string>
+    <string name="rtk_dfu_text_target_Aes_Mode">AES加密</string>
+    <string name="rtk_dfu_text_target_appData0_version">当前App Data0 版本</string>
+    <string name="rtk_dfu_text_target_appData1_version">当前App Data1 版本</string>
+    <string name="rtk_dfu_text_target_appData2_version">当前App Data2 版本</string>
+    <string name="rtk_dfu_text_target_appData3_version">当前App Data3 版本</string>
+    <string name="rtk_dfu_text_target_bank">当前要升级的Bank区</string>
+    <string name="rtk_dfu_text_target_bd_address">蓝牙地址</string>
+    <string name="rtk_dfu_text_target_buffer_check_mode">Buffer Check</string>
+    <string name="rtk_dfu_text_target_device">设备</string>
+    <string name="rtk_dfu_text_target_device_mac">MAC</string>
+    <string name="rtk_dfu_text_target_ic_type">IC 类型</string>
+    <string name="rtk_dfu_text_target_link_key">Link Key</string>
+    <string name="rtk_dfu_text_target_max_buffer_size">最大 Buffer Check 值</string>
+    <string name="rtk_dfu_text_target_name">设备名称</string>
+    <string name="rtk_dfu_text_target_old_fw_version">对端APP版本</string>
+    <string name="rtk_dfu_text_target_old_patch_version">对端Patch版本</string>
+    <string name="rtk_dfu_text_target_pactch_bank">当前要升级的Patch Bank区</string>
+    <string name="rtk_dfu_text_target_patch_extend_version">对端Extend Patch版本</string>
+    <string name="rtk_dfu_text_unfold">展开</string>
+    <string name="rtk_dfu_text_work_mode">升级模式</string>
+    <string name="rtk_dfu_throught">数据量：%1$s, 耗时：%2$s, 速率：%3$s</string>
+    <string name="rtk_dfu_title_device_info">设备信息</string>
+    <string name="rtk_dfu_title_select_file_type">选择文件类型</string>
+    <string name="rtk_dfu_toast_connection_error_message">初始化连接对端设备异常,\n%s</string>
+    <string name="rtk_dfu_toast_error_message">错误码：%1$s\n概述：%2$s\n详情：%3$s</string>
+    <string name="rtk_dfu_transfer_result">OTA传输总时间为：%1$.2fs\n固件传输时间为：%2$.2fs \n固件传输速率为：%3$.3fKB/s</string>
+    <string name="rtk_dfu_unknown_device">未知设备</string>
+    <string name="rtk_dfu_work_mode_extension">外部Flash升级</string>
+    <string name="rtk_dfu_work_mode_limmit">Limit</string>
+    <string name="rtk_dfu_work_mode_normal">普通升级</string>
+    <string name="rtk_dfu_work_mode_slient">静默升级</string>
+    <string name="rtk_dfu_work_mode_unknown">未知</string>
+    <string name="rtk_message_exit_app">确认退出应用?</string>
+    <string name="rtk_ok">确定</string>
+    <string name="rtk_pref_title_background_run">后台运行</string>
+    <string name="rtk_pref_title_developer_optoins">开发者选项</string>
+    <string name="rtk_pref_title_log">自动清理日志</string>
+    <string name="rtk_pref_title_upgrade">自动检查版本更新</string>
+    <string name="rtk_summaryOff">关闭</string>
+    <string name="rtk_summaryOn">打开</string>
+    <string name="rtk_summaryOn_log">保留最近3天日志</string>
+    <string name="rtk_summaryOn_upgrade">自动检查升级</string>
+    <string name="rtk_switchTextOff">关闭</string>
+    <string name="rtk_switchTextOn">打开</string>
+    <string name="rtk_text_help">帮助</string>
+    <string name="rtk_text_ota_is_processing">正在进行固件升级</string>
+    <string name="rtk_text_version">版本</string>
+    <string name="rtk_title_about">关于</string>
+    <string name="rtk_title_dependences_library">依赖库</string>
+    <string name="rtk_title_device_info">设备信息</string>
+    <string name="rtk_title_help">帮助</string>
+    <string name="rtk_title_support">支持</string>
+    <string name="rtk_toast_no_device">设备未连接</string>
+    <string name="rtk_toast_operation_failed">操作失败</string>
+    <string name="rtkbt_dfu_finish_message_active_image_success">镜像升级成功</string>
+    <string name="rtkbt_dfu_tick_message_active_image_success">镜像升级成功，正在激活，请勿重启设备（%d秒）</string>
+    <string name="rtkbt_ota_about_title">关于</string>
+    <string name="rtkbt_ota_action_about">关于</string>
+    <string name="rtkbt_ota_action_settings">设置</string>
+    <string name="rtkbt_ota_connect_device">正在与设备：%1$s建立连接，请稍等片刻…</string>
+    <string name="rtkbt_ota_connect_hid_profile">正在连接一个HID设备，先与对方建立HID profile，请稍等片刻…</string>
+    <string name="rtkbt_ota_connect_hid_profile_failed">连接HID profile失败</string>
+    <string name="rtkbt_ota_content_description_splashscreen">Splash screen image</string>
+    <string name="rtkbt_ota_dfu_OTA_Error_Code_Analysis">错误原因分析: </string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Count">测试总轮数</string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Error_Code">错误码: </string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Error_Count">失败轮数</string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Error_Stop_label">OTA 压力测试出错停止设置:</string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Result">OTA 压力测试情况</string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Stop">停止OTA压力测试</string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Success_Code">成功码: </string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Success_Count">成功轮数</string>
+    <string name="rtkbt_ota_dfu_OTA_Stress_Test_Control_label">OTA 压力测试设置:</string>
+    <string name="rtkbt_ota_dfu_OTA_Version_Check_lable">OTA 版本检查设置:</string>
+    <string name="rtkbt_ota_dfu_action_select_device">选择设备</string>
+    <string name="rtkbt_ota_dfu_action_select_file">选择文件</string>
+    <string name="rtkbt_ota_dfu_action_stress_upload">开始OTA压力升级,测试轮数：%1$d</string>
+    <string name="rtkbt_ota_dfu_action_upload">开始固件升级</string>
+    <string name="rtkbt_ota_dfu_action_upload_cancel">取消</string>
+    <string name="rtkbt_ota_dfu_action_upload_help">\?</string>
+    <string name="rtkbt_ota_dfu_alert_detail_file_info_title">文件详细信息</string>
+    <string name="rtkbt_ota_dfu_auto_test_turn_on">使能OTA 自动化测试选项</string>
+    <string name="rtkbt_ota_dfu_bin_files_created">Bin文件已拷贝到：/sdcard/Realsil</string>
+    <string name="rtkbt_ota_dfu_bin_new_files_created">新的Bin文件已拷贝到：/sdcard/Realsil</string>
+    <string name="rtkbt_ota_dfu_click_upload">固件已选择，请点击OTA升级按键进行升级</string>
+    <string name="rtkbt_ota_dfu_confirmation_dialog_exit_message">确认退出应用？</string>
+    <string name="rtkbt_ota_dfu_confirmation_dialog_title">固件升级中</string>
+    <string name="rtkbt_ota_dfu_confirmation_dialog_toast_title">提示信息</string>
+    <string name="rtkbt_ota_dfu_connected_ota_target">当前OTA设备:</string>
+    <string name="rtkbt_ota_dfu_current_target_info">请选择OTA目标设备</string>
+    <string name="rtkbt_ota_dfu_default_name">OTA</string>
+    <string name="rtkbt_ota_dfu_default_toast">请选择一个设备进行OTA升级</string>
+    <string name="rtkbt_ota_dfu_feature_title">DFU</string>
+    <string name="rtkbt_ota_dfu_feature_title_long">设备固件升级</string>
+    <string name="rtkbt_ota_dfu_file_status_invalid">无效文件</string>
+    <string name="rtkbt_ota_dfu_file_status_invalid_message">请选择有效的Bin文件</string>
+    <string name="rtkbt_ota_dfu_help_message">在进行固件升级之前必须安装一个文件浏览器
+        \n\n在应用市场中有很多类似的应用，如ES文件浏览器等，你可以自行选择一个下载在手机/平板/TV中
+        \n\n当你选择文件时，会要求你选择一个可用的文件浏览器来选择文件
+       </string>
+    <string name="rtkbt_ota_dfu_help_title">选择文件</string>
+    <string name="rtkbt_ota_dfu_section_application_header">文件/版本信息</string>
+    <string name="rtkbt_ota_dfu_section_dfu_header">设备固件升级</string>
+    <string name="rtkbt_ota_dfu_select_file">设备已连接，请选择一个固件进行OTA升级</string>
+    <string name="rtkbt_ota_dfu_service_unsupport">Dfu模式不支持</string>
+    <string name="rtkbt_ota_dfu_setting_section">OTA 升级参数设置</string>
+    <string name="rtkbt_ota_dfu_settings_dfu">DFU选项设置</string>
+    <string name="rtkbt_ota_dfu_settings_dfu_about">结束DFU</string>
+    <string name="rtkbt_ota_dfu_settings_title">DFU设置</string>
+    <string name="rtkbt_ota_dfu_silent_active_image_message">固件已经下载到对端设备并校验正确，是否激活？</string>
+    <string name="rtkbt_ota_dfu_status_abored">已终止</string>
+    <string name="rtkbt_ota_dfu_status_aborted_msg">固件升级已被取消</string>
+    <string name="rtkbt_ota_dfu_status_completed">已完成</string>
+    <string name="rtkbt_ota_dfu_status_completed_msg">固件升级成功</string>
+    <string name="rtkbt_ota_dfu_status_connecting">正在连接…</string>
+    <string name="rtkbt_ota_dfu_status_connecting_msg">正在与%s建立连接…</string>
+    <string name="rtkbt_ota_dfu_status_disconnecting">正在断开连接…</string>
+    <string name="rtkbt_ota_dfu_status_disconnecting_msg">正在与%s断开连接…</string>
+    <string name="rtkbt_ota_dfu_status_error">升级失败</string>
+    <string name="rtkbt_ota_dfu_status_error_msg">DFU流程执行失败</string>
+    <string name="rtkbt_ota_dfu_status_initializing">正在初始化…</string>
+    <string name="rtkbt_ota_dfu_status_scanning">正在扫描…</string>
+    <string name="rtkbt_ota_dfu_status_starting">启动DFU模式…</string>
+    <string name="rtkbt_ota_dfu_status_starting_msg">初始化DFU流程…</string>
+    <string name="rtkbt_ota_dfu_status_uploading">正在升级…</string>
+    <string name="rtkbt_ota_dfu_status_uploading_msg">发送文件给%s…</string>
+    <string name="rtkbt_ota_dfu_status_validating">校验升级文件…</string>
+    <string name="rtkbt_ota_dfu_status_validating_msg">校验文件…</string>
+    <string name="rtkbt_ota_dfu_upload_dialog_cancel_message">确认取消升级？</string>
+    <string name="rtkbt_ota_dfu_uploading_label">正在升级…</string>
+    <string name="rtkbt_ota_dfu_uploading_percentage">%d%%</string>
+    <string name="rtkbt_ota_dfu_uploading_percentage_label">0%</string>
+    <string name="rtkbt_ota_font_path">fonts/trebucbd.ttf</string>
+    <string name="rtkbt_ota_no">否</string>
+    <string name="rtkbt_ota_no_ble">设备不支持BLE</string>
+    <string name="rtkbt_ota_normal_rtkbt_ota_font_path">fonts/trebuc.ttf</string>
+    <string name="rtkbt_ota_ok">好的</string>
+    <string name="rtkbt_ota_progress">%d%%</string>
+    <string name="rtkbt_ota_progress_bar_timeout">等待操作超时，可能出现延时，断开连接</string>
+    <string name="rtkbt_ota_sure">确定</string>
+    <string name="rtkbt_ota_title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="rtkbt_ota_toast_bt_enabled">蓝牙已打开</string>
+    <string name="rtkbt_ota_toast_bt_not_enabled">蓝牙未打开</string>
+    <string name="rtkbt_ota_toast_dfu_service_connect">Dfu服务已连接</string>
+    <string name="rtkbt_ota_toast_dfu_service_disconnect">Dfu服务已断开连接</string>
+    <string name="rtkbt_ota_toast_dfu_service_not_ready">Dfu服务未准备好</string>
+    <string name="rtkbt_ota_toast_gatt_connect">Gatt已连接</string>
+    <string name="rtkbt_ota_toast_ota_failed">升级失败，\n%s</string>
+    <string name="rtkbt_ota_toast_ota_success">升级成功，成功代码：%s</string>
+    <string name="rtkbt_ota_toast_prepare_ota_process_failed">OTA准备工作异常</string>
+    <string name="rtkbt_ota_toast_some_error_in_load_file">加载文件异常</string>
+    <string name="rtkbt_ota_toast_some_error_in_set_ota_mode">设置OTA工作模式异常</string>
+    <string name="rtkbt_ota_toast_start_ota_process">开始进行OTA升级</string>
+    <string name="rtkbt_ota_yes">是</string>
+    <string name="rtksdk_action_cancel">取消</string>
+    <string name="rtksdk_action_scan">搜索</string>
+    <string name="rtksdk_button_checkupdate">检查更新</string>
+    <string name="rtksdk_copyright">
+       版权所有 ©2018 Realtek Semiconductor Corp.\n保留所有权利.
+    </string>
+    <string name="rtksdk_permission_cancel">残忍拒绝</string>
+    <string name="rtksdk_permission_denied">权限不足: %1$s</string>
+    <string name="rtksdk_permission_ok">立刻开启</string>
+    <string name="rtksdk_scanner_empty">未搜索到设备</string>
+    <string name="rtksdk_scanner_subtitle_available_devices">可使用设备</string>
+    <string name="rtksdk_scanner_subtitle_bonded_devices">已绑定设备</string>
+    <string name="rtksdk_title_scanner">搜索</string>
+    <string name="rtksdk_title_select_file">选择文件</string>
+    <string name="rtksdk_toast_bt_enable">蓝牙开启</string>
+    <string name="rtksdk_toast_bt_not_enable">蓝牙未开启</string>
+    <string name="scanner_subtitle_bonded">网络设备:</string>
+    <string name="scanner_subtitle_not_bonded">可用设备:</string>
+    <string name="scanning">扫描中</string>
+    <string name="search_home_device">搜索家庭网络中的设备</string>
+    <string msgid="146198913615257606" name="search_menu_title">"搜索"</string>
+    <string name="select_device_to_add">选择设备添加到本组中</string>
+    <string name="setting_scan_device_only_bond_one_device_toast">只能绑定一个设备，请解绑当前设备再连接其他设备</string>
+    <string name="settings_bracelet">我的设备</string>
+    <string name="settings_remove_bond">解除绑定</string>
+    <string name="settings_remove_bond_sync_end_tip">确定要断开连接？</string>
+    <string name="share">分享</string>
+    <string name="share_error">该二维码已失效，请重新生成二维码</string>
+    <string name="shared_device">分享过的不能再分享给别人</string>
+    <string name="something_error">出现异常</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="successfully_deleted">删除成功,请手动重置设备</string>
+    <string name="sure">确定</string>
+    <string name="sure_to_exit">您确定退出吗？</string>
+    <string name="sync_data_success">同步数据成功!</string>
+    <string name="syncing_data">同步历史数据...</string>
+    <string name="syncing_data_fail">同步数据失败，请再试一次</string>
+    <string name="test_result_pressure_error">失败</string>
+    <string name="test_result_pressure_info">提示</string>
+    <string name="test_result_pressure_success">成功</string>
+    <string name="test_result_pressure_warning">异常</string>
+    <string name="text_about_library">依赖库</string>
+    <string name="text_automator_test">自动化测试</string>
+    <string name="text_automator_total_case">找到 %d 个用例</string>
+    <string name="text_connected">已连接</string>
+    <string name="text_current_automator_test_case">用例 %1$d/%2$d : %3$s</string>
+    <string name="text_disconnected">未连接</string>
+    <string name="text_function_test">功能测试</string>
+    <string name="text_label_file_path">文件</string>
+    <string name="text_label_ic_type">芯片</string>
+    <string name="text_le_addr">LE 地址</string>
+    <string name="text_pressure_test">压力测试</string>
+    <string name="text_robot">按键助手</string>
+    <string name="time_error">时间有问题</string>
+    <string name="title_key_assistant">按键助手</string>
+    <string name="title_pressure_test_bbpro">压力测试 (BBpro)</string>
+    <string name="title_select_chip">选择芯片</string>
+    <string name="title_settings">设置</string>
+    <string name="title_test_case_info">测试用例详情</string>
+    <string name="toast_message">对话框</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="zxing_app_name">条码扫描器</string>
+    <string name="zxing_button_ok">确定</string>
+    <string name="zxing_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="zxing_msg_default_status">请将条码置于取景框内扫描。  </string>
+</resources>

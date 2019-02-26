@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A47a5</color>
+    <color name="colorPrimaryDark">#2A47a5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="actionBarColor">#009CDE</color>
+
+    <color name="darkgrey">#ffc0c0c0</color>
+    <color name="gold">#ffb89766</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="light_blue">#ff36bcf6</color>
+    <color name="gray">#88000000</color>
+    <color name="lightgray">#ffd3d3d3</color>
+    <color name="setting_bg_color">#ff2A47a5</color>
+
+    <color name="homeColorPrimary">#1a9fbe</color>
+    <color name="homeColorPrimaryDark">#1a9fbe</color>
+    <color name="homeColorAccent">#FF4081</color>
+    <color name="text_gray_color">#ff808080</color>
+    <color name="setting_item_press">#ffd9d9d9</color>
+    <color name="setting_item_normal">#ffffffff</color>
+
+    <!--第三方登录开始-->
+    <!--第三方登录结束-->
+
+
+    <!--Area Code开始-->
+    <!--Area Code结束-->
+</resources>

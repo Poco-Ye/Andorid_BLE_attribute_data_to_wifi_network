@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\workspace\\WifiConfig\\src\\app\\build\\intermediates\\incremental\\mergeCustomerDebugAndroidTestResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\neil_zhou\\.gradle\\caches\\transforms-1\\files-1.1\\rtk-support-1.0.3-34.aar\\f384ee1d48660a1c2af576c6ea171003\\res\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "buildFiles": [
+    "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\Android.mk",
+    "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "D:\\androidsdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003dD:/workspace/WifiConfig/src/app/build/intermediates/ndkBuild/customer/debug/obj NDK_LIBS_OUT\u003dD:\\workspace\\WifiConfig\\src\\app\\build\\intermediates\\ndkBuild\\customer\\debug\\lib clean"
+  ],
+  "libraries": {
+    "coreMesh-customerDebug-x86": {
+      "buildCommand": "D:\\androidsdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-19 NDK_OUT\u003dD:/workspace/WifiConfig/src/app/build/intermediates/ndkBuild/customer/debug/obj NDK_LIBS_OUT\u003dD:\\workspace\\WifiConfig\\src\\app\\build\\intermediates\\ndkBuild\\customer\\debug\\lib D:/workspace/WifiConfig/src/app/build/intermediates/ndkBuild/customer/debug/obj/local/x86/libcoreMesh.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "coreMesh",
+      "files": [
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\aes.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\aes_cmac.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\ccm.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\com_realsil_mesh_meshencjni_CoreMesh.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\configuration_client.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\crypto.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\ecc.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\generic_on_off_client.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\javaFunCalledByC.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\light_cwrgb_client.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\mesh_beacon.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "D:\\workspace\\WifiConfig\\src\\app\\src\\main\\jni\\provision_provisioner.c",
+          "flags": "\"-gcc-toolchain\" \"D:/androidsdk/ndk-bundle/build//../toolchains/x86-4.9/prebuilt/windows-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-O0\" \"-UNDEBUG\" \"-fno-limit-debug-info\" \"-ID:/workspace/WifiConfig/src/app/src/main/jni\" \"-DANDROID\" \"-D__ANDROID_API__\u003d19\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"D:/androidsdk/ndk-bundle/build//../sysroot\" \"-isystem\" \"D:/androidsdk/ndk-bundle/build//../sysroot/usr/include/i686-linux-android\""
+        }
+      ],
+      "output": "D:\\workspace\\WifiConfig\\src\\app\\build\\intermediates\\ndkBuild\\customer\\debug\\obj\\local\\x86\\libcoreMesh.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cCompilerExecutable": "D:\\androidsdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

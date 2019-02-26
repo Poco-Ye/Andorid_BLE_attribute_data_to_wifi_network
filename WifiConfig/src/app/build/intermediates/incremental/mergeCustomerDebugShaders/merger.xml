@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\workspace\WifiConfig\src\app\src\main\shaders"/></dataSet><dataSet config="customer"><source path="D:\workspace\WifiConfig\src\app\src\customer\shaders"/></dataSet><dataSet config="debug"><source path="D:\workspace\WifiConfig\src\app\src\debug\shaders"/></dataSet><dataSet config="customerDebug"><source path="D:\workspace\WifiConfig\src\app\src\customerDebug\shaders"/></dataSet></merger>

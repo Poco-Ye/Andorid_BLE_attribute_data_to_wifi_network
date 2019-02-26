@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽首頁"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s：%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s - %2$s：%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"向上瀏覽"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多選項"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"選擇應用程式"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"關閉"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"開啟"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"搜尋…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查詢"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜尋查詢"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜尋"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查詢"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string>
+    <string name="about">关于</string>
+    <string name="about_title">关于</string>
+    <string name="add_device_to_group">添加设备到组成功</string>
+    <string name="add_group">添加组</string>
+    <string name="aliyun_error">阿里云异常:</string>
+    <string name="app_name">WifiConfig</string>
+    <string name="bluetooth_enabled">藍牙已啓動！</string>
+    <string name="bluetooth_not_enabled">藍牙未啓動！</string>
+    <string name="bluetooth_not_support_ble">該設備不支持BLE。</string>
+    <string name="bond_failure">配對失敗</string>
+    <string name="bond_success">配對成功</string>
+    <string name="bonded_unpair_first">已配對壹個手環，如果需要配對其他手環，請先解除當前配對！</string>
+    <string name="cancel">取消</string>
+    <string name="config">配置</string>
+    <string name="connect_band">正在登錄手環, 請稍等...</string>
+    <string name="connect_band_already_bond">已和其他設備綁定，請先與前壹個設備解除綁定</string>
+    <string name="connect_disconnect">已斷開連接</string>
+    <string name="connect_to_device">与设备建立连接</string>
+    <string name="connected_with_toast">已連接，可以正常使用！</string>
+    <string name="connected_with_toast_local">已連接，可以正常使用！</string>
+    <string name="connecting_to_device_tip">正在連接設備</string>
+    <string name="control_all_devices">控制所有设备</string>
+    <string name="control_group">控制组</string>
+    <string name="control_single_device">控制单个设备</string>
+    <string name="delete_device_from_group">删除组设备成功</string>
+    <string name="delete_group_success">删除组成功</string>
+    <string name="delete_this_group">删除本组</string>
+    <string name="disconnect_reconnect_it_with_toast">已斷開連接，正在嘗試重連...</string>
+    <string name="disconnect_to_device">与设备断开连接</string>
+    <string name="help">帮助</string>
+    <string name="home_network">家庭网络</string>
+    <string name="home_network_name">家庭网络名称</string>
+    <string name="local_network_error">本地网络异常:</string>
+    <string name="menu_scan">搜索</string>
+    <string name="menu_stop">停止</string>
+    <string name="modify_group_name">修改组名称</string>
+    <string name="modify_homework_name">修改家庭网络名称</string>
+    <string name="mofify_device_name">修改设备名称</string>
+    <string name="more_than_the">超过分享个数限制</string>
+    <string name="new_group">新组</string>
+    <string name="no_data">无数据</string>
+    <string name="not_device_share">非设备分享二维码</string>
+    <string name="not_null">不能为空</string>
+    <string name="not_support_bluetooth">该设备不支持蓝牙</string>
+    <string name="not_updated_yet">暫未更新過</string>
+    <string name="ok">确定</string>
+    <string name="ota_update">OTA升级</string>
+    <string name="permission_disallowed">權限不允許</string>
+    <string name="permission_failure_cancel">取消</string>
+    <string name="permission_failure_sure">設置權限</string>
+    <string name="permission_failure_text">軟件需要獲取必要的權限以保證正常使用</string>
+    <string name="permission_failure_title">權限獲取失敗</string>
+    <string name="please_connect_device_first">请首先连接设备</string>
+    <string name="progress_bar_timeout">等待操作超時，可能出現問題，斷開當前連接！</string>
+    <string name="proxy_switch">代理切换</string>
+    <string name="pull_day">天</string>
+    <string name="pull_hour">小時</string>
+    <string name="pull_minutes">分鍾</string>
+    <string name="pull_month">個月</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="pull_to_scan">下拉掃描設備</string>
+    <string name="pull_year">年</string>
+    <string name="qr_scan">扫一扫</string>
+    <string name="reconnecting">正在连接中，请勿重复点击</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="release_to_refresh">釋放立即刷新</string>
+    <string name="release_to_scan">松開掃描</string>
+    <string name="remove">移除</string>
+    <string name="remove_bond">断开</string>
+    <string name="rename">重命名</string>
+    <string name="rtk_cancel">取消</string>
+    <string name="rtk_message_exit_app">确认退出应用?</string>
+    <string name="rtk_ok">确定</string>
+    <string name="rtk_text_help">帮助</string>
+    <string name="rtk_text_version">版本</string>
+    <string name="rtk_title_about">关于</string>
+    <string name="rtk_title_device_info">设备信息</string>
+    <string name="rtk_title_help">帮助</string>
+    <string name="rtksdk_action_cancel">取消</string>
+    <string name="rtksdk_action_scan">搜素</string>
+    <string name="rtksdk_button_checkupdate">检查更新</string>
+    <string name="rtksdk_copyright">
+       版权所有 ©2018 Realtek Semiconductor Corp.\n保留所有权利.
+    </string>
+    <string name="rtksdk_permission_cancel">残忍拒绝</string>
+    <string name="rtksdk_permission_denied">权限 Denied: %1$s</string>
+    <string name="rtksdk_permission_ok">立刻开启</string>
+    <string name="rtksdk_scanner_empty">无设备</string>
+    <string name="rtksdk_scanner_subtitle_available_devices">可用设备</string>
+    <string name="rtksdk_scanner_subtitle_bonded_devices">已绑定设备</string>
+    <string name="rtksdk_title_scanner">搜索</string>
+    <string name="rtksdk_title_select_file">选择文件</string>
+    <string name="rtksdk_toast_bt_enable">开呀开启!</string>
+    <string name="rtksdk_toast_bt_not_enable">蓝牙关闭!</string>
+    <string name="scanner_subtitle_bonded">网络设备:</string>
+    <string name="scanner_subtitle_not_bonded">可用設備:</string>
+    <string name="scanning">掃描中</string>
+    <string name="search_home_device">搜索家庭网络中的设备</string>
+    <string msgid="146198913615257606" name="search_menu_title">"搜尋"</string>
+    <string name="select_device_to_add">选择设备添加到本组中</string>
+    <string name="setting_scan_device_only_bond_one_device_toast">只能綁定壹個設備，請解綁當前設備再連接其他設備</string>
+    <string name="settings_bracelet">我的設備</string>
+    <string name="settings_remove_bond">解除綁定</string>
+    <string name="settings_remove_bond_sync_end_tip">確定要断开连接？</string>
+    <string name="share">分享</string>
+    <string name="share_error">该二维码已失效，请重新生成二维码</string>
+    <string name="shared_device">分享过的不能再分享给别人</string>
+    <string name="something_error">出現異常</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="successfully_deleted">删除成功,请手动重置设备</string>
+    <string name="sure">確定</string>
+    <string name="sure_to_exit">您确定退出吗？</string>
+    <string name="sync_data_success">同步數據成功!</string>
+    <string name="syncing_data">同步曆史數據...</string>
+    <string name="syncing_data_fail">同步數據失敗，請再試壹次</string>
+    <string name="time_error">時間有問題</string>
+    <string name="toast_message">对话框</string>
+    <string name="unknown_device">未知設備</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">剛剛更新</string>
+    <string name="zxing_app_name">條碼掃描器</string>
+    <string name="zxing_button_ok">確定</string>
+    <string name="zxing_msg_camera_framework_bug">很抱歉，Android 相機出現問題，您可能需要重新啟動您的裝置。</string>
+    <string name="zxing_msg_default_status">將條碼置於鏡頭範圍內以進行掃描。</string>
+</resources>

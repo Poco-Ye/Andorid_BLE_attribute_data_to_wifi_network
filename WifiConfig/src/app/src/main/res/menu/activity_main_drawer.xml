@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/nav_gatt"-->
+    <!--android:icon="@drawable/ic_launcher"-->
+    <!--android:title="@string/title_gatt"/>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_spp"-->
+    <!--android:icon="@drawable/ic_launcher"-->
+    <!--android:title="@string/title_spp"/>-->
+
+    <!--</group>-->
+
+    <!--<item android:title="@string/title_voice">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_voice_over_ble"-->
+                <!--android:icon="@mipmap/ic_launcher"-->
+                <!--android:title="@string/title_voice_over_ble"/>-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/nav_voice_over_spp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@mipmap/ic_launcher"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/title_voice_over_spp"/>&ndash;&gt;-->
+        <!--</menu>-->
+    <!--</item>-->
+
+
+    <item
+        android:id="@+id/nav_robot"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/text_robot"/>
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/rtk_title_about"/>
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/rtk_title_help"/>
+
+    <item
+        android:id="@+id/nav_device_info"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/rtk_title_device_info"/>
+
+</menu>

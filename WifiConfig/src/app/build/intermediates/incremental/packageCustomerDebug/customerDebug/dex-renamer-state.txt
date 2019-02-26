@@ -1,0 +1,4 @@
+#Thu Oct 25 11:15:02 CST 2018
+base.0=D\:\\workspace\\WifiConfig\\src\\app\\build\\intermediates\\transforms\\dexMerger\\customer\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

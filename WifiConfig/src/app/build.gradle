@@ -1,0 +1,145 @@
+apply plugin: 'com.android.application'
+
+static def releaseTime() {
+    return new Date().format("MMdd", TimeZone.getTimeZone("UTC"))
+}
+
+def appName() {
+    return "WifiConfig"
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.realsil.WifiConfig"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 0
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    signingConfigs {
+        debug {
+        }
+        release {
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+    File propFile = file('signing.properties')
+    if (propFile.exists()) {
+        Properties props = new Properties()
+        props.load(new FileInputStream(propFile))
+        if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+            android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+            android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
+            android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+            android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+        } else {
+            android.buildTypes.release.signingConfig = null
+        }
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+
+    // 根据渠道名称和release或debug类型，修改生成的apk名字
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def productFlavorsName = variant.productFlavors[0].name
+
+            if (variant.buildType.name == 'release') {
+                outputFileName = appName() + '-' + defaultConfig.versionName + '.' + defaultConfig.versionCode + '.apk'
+                if (productFlavorsName == "qc") {
+                    outputFileName = appName() +
+                            "_V${defaultConfig.versionName}.${defaultConfig.versionCode}" +
+                            ".apk"
+                } else {
+                    outputFileName = appName() +
+                            "_V${defaultConfig.versionName}" +
+                            ".apk"
+                }
+            } else {
+                outputFileName = appName() +
+                        "_V${defaultConfig.versionName}.${defaultConfig.versionCode}_${releaseTime()}(${variant.productFlavors[0].name})" +
+                        ".apk"
+            }
+        }
+    }
+
+    // 多渠道定义
+    flavorDimensions "mode"
+    productFlavors {
+        qc {
+            dimension "mode"
+            manifestPlaceholders = [CHANNEL_VALUE: "realsil"]
+        }
+        customer {
+            dimension "mode"
+            manifestPlaceholders = [CHANNEL_VALUE: "realsil"]
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v13:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // 加入6.0权限适配
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    compile(name: 'rxandroid-1.2.0', ext: 'aar')
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    compile 'com.android.support:design:26.1.0'
+    implementation files('libs/greendao-2.1.0.jar')
+    implementation files('libs/protostuff-api-1.0.8.jar')
+    implementation files('libs/protostuff-collectionschema-1.0.8.jar')
+    implementation files('libs/protostuff-core-1.0.8.jar')
+    implementation files('libs/protostuff-runtime-1.0.8.jar')
+    implementation files('libs/rxjava-1.1.6.jar')
+    implementation files('libs/WifiConfigProfile.jar')
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:support-dynamic-animation:26.1.0'
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'com.journeyapps:zxing-android-embedded:3.6.0'
+    compile 'com.alibaba:fastjson:1.2.9'
+    compile 'com.aliyun.dpa:oss-android-sdk:2.5.0'
+    implementation(name: 'rtk-dfu-3.1.8-209', ext: 'aar')
+    implementation(name: 'rtk-support-1.0.3-34', ext: 'aar')
+}
